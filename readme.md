@@ -1,8 +1,8 @@
 ## Audio and Image Processing 
 ![Alt text](/images/wav_visualization.png "Wav Visualization")
-![Alt text](/images/processed_images/parrotsBlackAndWhite.png "Wav Visualization")
-![Alt text](/images/processed_images/parrotsDithered.png "Wav Visualization")
-![Alt text](/images/processed_images/parrots_auto_leveled.png "Wav Visualization")
+![Alt text](/images/processed_images/parrotsBlackAndWhite.png "Black And White Example")
+![Alt text](/images/processed_images/parrotsDithered.png "Dithering Example")
+![Alt text](/images/processed_images/parrots_auto_leveled.png "Auto Level Example")
 
 ### Description of the project 
 * Audio Processing: visualizes a single or dual channel wav file and gradually increases and decreases the levels of an audio signal (fade) and plots the waves
