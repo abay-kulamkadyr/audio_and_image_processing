@@ -1,4 +1,3 @@
 package org.qulad;
 
-public class ImageView3 {
-}
+public class ImageView3 {}
