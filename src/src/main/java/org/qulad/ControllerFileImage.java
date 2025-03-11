@@ -1,47 +1,42 @@
 package org.qulad;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.control.Button;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 public class ControllerFileImage implements Initializable {
-  public Button bmpDialog;
-  private Scene scene;
-  List<String> lstFile;
-  public static String path;
+    public static String path;
+    public Button bmpDialog;
+    List<String> lstFile;
 
-  public void bmpDialogEvent(ActionEvent actionEvent) throws IOException {
-    FileChooser fileChooser = new FileChooser();
-    fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("BMP files", lstFile));
-    fileChooser.setTitle("Select a bmp file");
-    File file = fileChooser.showOpenDialog(null);
-    if (file != null) {
-      path = file.getAbsolutePath();
-      BMP.instance(path);
-      // Parent root =
-      // FXMLLoader.load(getClass().getClassLoader().getResource("src/main/resources/org/qulad/originalFileDisplay.fxml"));
-      Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-      // scene = new Scene(root, 1600, 1100);
-      // stage.setScene(scene);
-      App.setRoot("originalFileDisplay");
-      stage.centerOnScreen();
-      stage.show();
+    public void bmpDialogEvent(ActionEvent actionEvent) throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("BMP files", lstFile));
+        fileChooser.setTitle("Select a bmp file");
+        File file = fileChooser.showOpenDialog(null);
+        if (file != null) {
+            path = file.getAbsolutePath();
+            BMP.instance(path);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            App.setRoot("originalFileDisplay");
+            stage.centerOnScreen();
+            stage.show();
+        }
     }
-  }
 
-  @Override
-  public void initialize(URL url, ResourceBundle resourceBundle) {
-    lstFile = new ArrayList<>();
-    lstFile.add("*.bmp");
-  }
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        lstFile = new ArrayList<>();
+        lstFile.add("*.bmp");
+    }
 }

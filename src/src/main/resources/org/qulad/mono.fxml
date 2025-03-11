@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.qulad.ControllerMono">
    <children>
-      <AreaChart fx:id="linechart" layoutX="2.0" layoutY="278.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="1200.0">
+      <AreaChart fx:id="lineChart" layoutX="2.0" layoutY="278.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="1200.0">
         <xAxis>
           <NumberAxis side="BOTTOM" tickUnit="1" upperBound="6" fx:id="xAxis" />
         </xAxis>
