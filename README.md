@@ -11,7 +11,7 @@
 
 ### Technologies Used in This Project
 * Maven build automation
-* Java 
+* Java
 * JavaFX GUI library
 * Java Sound API
 
@@ -22,7 +22,7 @@
 ### Instructions to Build and Run the Project
 
 #### To Build the Project:
-1. Open a terminal or command prompt and navigate to the project directory (`mediaProjectRemastered`).
+1. Open a terminal or command prompt and navigate to the project directory (`src`).
 2. Execute the following command to compile the project:
 
 ```bash
