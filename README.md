@@ -1,19 +1,18 @@
 <h1 align="center">
   <br>
-  <img src="/images/wav_visualization.png" alt="Audio and Image Processing" width="100" ">
-  <img src="/images/processed_images/parrotsBlackAndWhite.png" alt="Audio and Image Processing" width="100" >
-  <img src="/images/processed_images/parrotsDithered.png" alt="Audio and Image Processing" width="100" >
-  <img src="/images/processed_images/parrots_auto_leveled.png" alt="Audio and Image Processing" width="100" >
+  <img src="/images/wav_visualization.png" alt="Audio and Image Processing" width="200">
+  <img src="/images/processed_images/parrotsBlackAndWhite.png" alt="Audio and Image Processing" width="200" >
+  <img src="/images/processed_images/parrotsDithered.png" alt="Audio and Image Processing" width="200" >
+  <img src="/images/processed_images/parrots_auto_leveled.png" alt="Audio and Image Processing" width="200" >
   <br>
   Audio and Image Processing
   <br>
 </h1>
-Audio and Image Compression<h4 align="center">A project demonstrating lossless audio and lossy image compression techniques.</h4>
 
 <p align="center">
   <a href="#description">Description</a> •
   <a href="#key-features">Key features</a> •
-  <a href="#techologies">Technologies</a> •
+  <a href="#technologies">Technologies</a> •
   <a href="#prerequisites">Prerequisites</a> •
   <a href="#building-and-running">Build and Run</a> •
 </p>
