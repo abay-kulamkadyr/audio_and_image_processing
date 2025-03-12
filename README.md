@@ -1,27 +1,53 @@
-# Audio and Image Processing
+<h1 align="center">
+  <br>
+  <img src="/images/wav_visualization.png" alt="Audio and Image Processing" width="100" ">
+  <img src="/images/processed_images/parrotsBlackAndWhite.png" alt="Audio and Image Processing" width="100" >
+  <img src="/images/processed_images/parrotsDithered.png" alt="Audio and Image Processing" width="100" >
+  <img src="/images/processed_images/parrots_auto_leveled.png" alt="Audio and Image Processing" width="100" >
+  <br>
+  Audio and Image Processing
+  <br>
+</h1>
+Audio and Image Compression<h4 align="center">A project demonstrating lossless audio and lossy image compression techniques.</h4>
 
-![Alt text](/images/wav_visualization.png "Wav Visualization")
-![Alt text](/images/processed_images/parrotsBlackAndWhite.png "Black And White Example")
-![Alt text](/images/processed_images/parrotsDithered.png "Dithering Example")
-![Alt text](/images/processed_images/parrots_auto_leveled.png "Auto Level Example")
+<p align="center">
+  <a href="#description">Description</a> •
+  <a href="#key-features">Key features</a> •
+  <a href="#techologies">Technologies</a> •
+  <a href="#prerequisites">Prerequisites</a> •
+  <a href="#building-and-running">Build and Run</a> •
+</p>
 
-### Description of the Project
+### Description
 * Audio Processing: Visualizes a single or dual channel wav file and gradually increases and decreases the levels of an audio signal (fade) while plotting the waveforms.
 * Image Processing: Takes a BMP file and performs grayscale conversion, dithering, and auto-level transformations.
 
-### Technologies Used in This Project
-* Maven build automation
+### Key Features
+* Audio Processing:
+  - Load and visualize a single or dual channel wav file.
+  - Perform fade in and fade out effects on the audio signal.
+  - Save the modified audio signal as a new wav file.
+
+* Image Processing:
+  - Load and display a BMP image.
+  - Convert the image to grayscale.
+  - Apply dithering to the grayscale image.
+  - Perform auto-level transformations on the image.
+  - Save the modified image as a new BMP file.
+
+## Technologies
 * Java
+* Maven
 * JavaFX GUI library
 * Java Sound API
 
-### Prerequisites
+## Prerequisites
 - Have Maven installed on your machine.
 - If Maven is not installed, please refer to [Maven Installation](https://maven.apache.org/install.html).
 
-### Instructions to Build and Run the Project
+## Building and Running
 
-#### To Build the Project:
+### To Build the Project:
 1. Open a terminal or command prompt and navigate to the project directory (the directory containing the `src` folder).
 2. Execute one of the following build commands:
    - To build and package using the assembly plugin (fat JAR):
@@ -33,7 +59,7 @@ mvn clean compile assembly:single
 mvn clean install
 ```
 
-#### To Run the Project:
+### To Run the Project:
 
 **Option 1: Run via Maven (JavaFX Run)**
 - From the project root, execute:
